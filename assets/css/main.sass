@@ -1,0 +1,174 @@
+// This is the single file output by sass. It is intended to ONLY @import other files.
+
+*
+  margin: 0px
+
+  #main
+    width: 70%
+    float: left
+
+    h1
+      padding-top: 50px
+      text-align: center
+      font:
+        size: 3em
+        weight: 500
+        color: white
+
+    hr
+      box-shadow: -5px 2px 10px grey
+
+    .blue-box
+      max-width: 720px
+      border-radius: 5px
+      border: 3px solid #3897db
+      margin: 80px auto
+      overflow: auto
+
+      .quote
+        padding: 20px
+
+      .lq-mark
+        font-size: 2.8em
+
+      #quote
+        width: 95%
+        text-align: center
+        font-size: 2em
+
+      .author-area
+        padding-right: 10px
+        margin-bottom: 50px
+
+        .author
+          float: right
+
+  #side
+    width: 30%
+    float: right
+    box-shadow: -2px 0 10px grey
+
+
+    button
+      display: flex
+      max-width: 50%
+      margin: 100px auto
+      padding: 20px 40px
+      border-radius: 5px
+      border: 2px solid black
+      background: white
+      font-size: 1em
+
+      &:hover
+        background: #3897db
+        transition: 0.5s
+        color: white
+        cursor: pointer
+
+      &:focus
+        outline: none
+
+      a
+        text-decoration: none
+        color: black
+
+        &:hover
+          color: white
+
+
+//media queries go here
+
+@media screen and (max-width: 900px)
+  #main
+    width: 100%
+    float: none
+    padding: 5px
+
+    h1
+      padding-top: 10px
+      text-align: center
+      font-size: 2em
+
+    hr
+      box-shadow: -5px 2px 10px grey
+
+    .blue-box
+      max-width: 720px
+      border-radius: 5px
+      border: 3px solid #3897db
+      margin: 30px auto
+      overflow: auto
+
+      #quote
+        text-align: center
+        font-size: 1em
+
+      .author-area
+        padding-right: 10px
+        margin-bottom: 50px
+
+        .author
+          float: right
+
+  #side
+    width: 90%
+    float: none
+    margin: 0 auto
+    //box-shadow: none
+
+
+    button
+      display: flex
+      max-width: 40%
+      margin: 10px auto
+      padding: 5px 10px
+      border-radius: 5px
+      font-size: 1em
+
+
+@media screen and (max-width: 400px)
+  #main
+    width: 100%
+    float: none
+    padding: 10px
+
+    h1
+      padding-top: 10px
+      text-align: center
+      font-size: 2em
+
+    hr
+      box-shadow: -5px 2px 10px grey
+
+    .blue-box
+      max-width: 720px
+      border-radius: 5px
+      border: 3px solid #3897db
+      margin: 30px auto
+      overflow: auto
+
+      #quote
+        text-align: center
+        font-size: 1em
+
+      .author-area
+        padding-right: 10px
+        margin-bottom: 50px
+
+        .author
+          float: right
+
+  #side
+    width: 90%
+    float: none
+    margin: 0 auto
+    //box-shadow: none
+
+
+    button
+      display: flex
+      max-width: 40%
+      margin: 10px auto
+      padding: 5px 10px
+      border-radius: 5px
+      font-size: 1em
